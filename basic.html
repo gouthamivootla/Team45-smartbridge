@@ -1,0 +1,52 @@
+
+
+<html>
+<head>
+<style>
+header
+{
+background-color:black;
+padding:10px
+}
+</style>
+</head>
+<body style="background-color:#ADD8E6">
+<header><center><h1><font color="white">H-1B VISA PREDICTION</font><h1></center></header>
+<center>
+<form action = "http://localhost:5000/login" method = "post"><label for = "states"></label>
+<label for = "occupation"><h3>Choose your occupation</h3></label>
+<select name = "s" required>
+<option value = "computer occupations">computer occupations</option>
+<option value = "Financial Occupation">Financial Occupation</option>
+<option value = "Management Occupation">Management Occupation</option>
+<option value = "Architecture & Engineering">Architecture & Engineering</option>
+<option value = "Business Occupation">Business Occupation</option>
+<option value = "Medical Occupations">Medical Occupations</option>
+<option value = "Marketing Occupation">Marketing Occupation</option>
+<option value = "Advance Sciences">Advance Sciences</option>
+<option value = "others">others</option>
+</select><br>
+<label for = "states"><h3>Choose your state of company<h3></label>
+<select name = "st" required>
+<option value = "california city">california city</option>
+<option value = "new york">new york </option>
+<option value = "texas">texas</option>
+<option value = "florida">florida </option>
+<option value = "jersey">jersey</option>
+</select><br>
+<p><h3>Choose your working time(fulltime:1//part time:0)</h3></p>
+<p><input type = "text" name = "time" required/></p>
+
+
+
+<p><h3>Enter your Annualsalary</h3></p>
+<p><input type = "text" name = "wages"required/></p>
+<p><h3>Enter the year</h3></p>
+<p><input type = "text" name = "year" required/></p>
+<p> <input type = "submit" value = "send"/></p>
+
+</form>
+<b>{{showcase}}</b>
+</center>
+</body>
+</html>
